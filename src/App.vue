@@ -1,16 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h2>Volume Tracker (0-20)</h2>
+  <h2>Current Volume - {{ volume }}</h2>
+  <div d-flex >
+    <button @click="volume += 2">Increase</button>
+    <button @click="volume -= 2">Decrease</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data(){
+    return {
+      volume: 0
+    }
+  },
+  methods: {},
+  computed: {},
 }
 </script>
 
