@@ -1,4 +1,4 @@
-# Wathers:-
+# Watchers:-
 
  - Allow you to watch any data or computed property and execute some code in response to change in the value.
  - Ex:-
